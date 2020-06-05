@@ -1,5 +1,6 @@
 class HelloController < ApplicationController
   def index
-    print("hello") ;
+    #print("hello") ;
+    @hello=Hello.all;
   end
 end
