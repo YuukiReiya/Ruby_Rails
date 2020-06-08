@@ -1,0 +1,12 @@
+<%# コメントアウト %>
+<%#
+<h1>Hello#index</h1>
+<p>Find me in app/views/hello/index.html.erb</p>
+%>
+<h1>Hello! Rails</h1>
+<ul>
+    <% @sampleTable.each do |item| %>
+    <li><%= item.id%></li>
+    <li><%= item.name%></li>
+    <% end %>
+</ul>
