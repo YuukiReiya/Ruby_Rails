@@ -1,13 +1,13 @@
 <h1>サンプル表示です</h1>
 <ul>
     <% @sample.each do |item| %>
+    <li><%= item.id%></li>
+    <li><%= item.name%></li>
     <% end %>
 </ul>
 <%#
-    <li><%= item.id%></li>
 <%#
 <%#
-    <li><%= item.name%></li>
 <%#
 <%#
 %>
