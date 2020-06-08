@@ -10,11 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_04_094749) do
+ActiveRecord::Schema.define(version: 2020_06_05_090711) do
 
   create_table "hellos", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "items", force: :cascade do |t|
+    t.string "value1"
+    t.integer "value2"
+    t.text "value3"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "sampleTable", id: false, force: :cascade do |t|
+    t.integer "id"
+    t.text "name"
   end
 
 end
